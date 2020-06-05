@@ -6,7 +6,7 @@ A basic HTML webpage was created first to house the table. This page contains a 
 
 screenshot
 
-### To populate the rest of the table, I sourced the data (tableData) held in data.js into app.js and then selected the table body using D3 (d3.select). Then, I wrote a function populateTable() to populate the table by mapping tableData; appending a new table row for each object (dictionary), and populating each column with the values for each key within that object (dictionary). To populate the table, the function was simply called.
+To populate the rest of the table, I sourced the data (tableData) held in data.js into app.js and then selected the table body using D3 (d3.select). Then, I wrote a function populateTable() to populate the table by mapping tableData; appending a new table row for each object (dictionary), and populating each column with the values for each key within that object (dictionary). To populate the table, the function was simply called.
 
 To filter the table based on a user input date, I wrote an anonymous function that would be triggered when the filter button was clicked. This function first selects the user input with d3.select() and .property(“value”). Then, filters tableData based on that input value with .filter(), storing the results in filteredData. After, the original table is cleared using tbody.html(“”); it is repopulated with filteredData. This is achieved by using a forEach loop on filteredData to append a new row and populate each column.
 

@@ -66,10 +66,9 @@ function runEnter() {
   }
 }
 
-
 // Event Listener : clearing the output with Reset button
-// var button2 = d3.select("#filter-btn");
-// button2.on('click',function(){
-//    tbody.html("");
-//    populateInfo();
-// });
+var button2 = d3.select(".btn-primary");
+button2.on('click',function(){
+  //tbody.html("");
+  populateInfo();
+});
